@@ -1,0 +1,23 @@
+{
+  "name": "qwik-vnode-locate-repro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal reproduction of Qwik 2.0.0-beta.35 'Internal assert ... Missing child' crash on event dispatch when a useVisibleTask$ with strategy:'document-ready' lives on an elementless root component$. See README.md.",
+  "scripts": {
+    "dev": "vite --mode ssr",
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.server": "vite build -c adapters/static/vite.config.ts",
+    "preview": "qwik build preview && vite preview --open"
+  },
+  "dependencies": {
+    "@qwik.dev/core": "2.0.0-beta.35",
+    "@qwik.dev/router": "2.0.0-beta.35"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "vite-tsconfig-paths": "5.1.4"
+  }
+}

@@ -104,7 +104,7 @@ artifact.
   beta.35 bug — query-string chars in `key` corrupt `q:vnode`
   serialization).
 
-### Existing JAQ-2237 / qwik#8310 guard does not catch this class
+### Existing qwik#8310 guard does not catch this class
 
 The original app installs a `Node.prototype.insertBefore` guard to
 neutralize the residual flush-phase race from qwik#8310. That guard

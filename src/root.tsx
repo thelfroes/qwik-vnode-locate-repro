@@ -9,8 +9,9 @@ import { QwikRouterProvider, RouterOutlet } from '@qwik.dev/router';
  * of its own. The two `useVisibleTask$` calls below have `strategy:
  * 'document-ready'` and `'document-idle'`.
  *
- * On Qwik 2.0.0-beta.35, this combination causes Qwik to emit a CONSOLIDATED
- * task-registration script element at <body> level, looking like:
+ * On Qwik 2.0.0-beta.35 AND 2.0.0-beta.36, this combination causes Qwik to
+ * emit a CONSOLIDATED task-registration script element at <body> level,
+ * looking like:
  *
  *   <script
  *     q-d:qinit="/@qwik-handlers#_run#2004"

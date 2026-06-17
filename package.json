@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "description": "Minimal reproduction of Qwik 2.0.0-beta.35 'Internal assert ... Missing child' crash on event dispatch when a useVisibleTask$ with strategy:'document-ready' lives on an elementless root component$. See README.md.",
+  "description": "Minimal reproduction of Qwik 'Internal assert ... Missing child' crash on event dispatch when a useVisibleTask$ with strategy:'document-ready' lives on an elementless root component$. Confirmed on 2.0.0-beta.35 and 2.0.0-beta.36. See README.md.",
   "scripts": {
     "dev": "vite --mode ssr",
     "build": "qwik build",
@@ -12,8 +12,8 @@
     "preview": "qwik build preview && vite preview --open"
   },
   "dependencies": {
-    "@qwik.dev/core": "2.0.0-beta.35",
-    "@qwik.dev/router": "2.0.0-beta.35"
+    "@qwik.dev/core": "2.0.0-beta.36",
+    "@qwik.dev/router": "2.0.0-beta.36"
   },
   "devDependencies": {
     "typescript": "5.9.3",

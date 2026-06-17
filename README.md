@@ -1,4 +1,14 @@
-# Qwik 2.0.0-beta.35 — `vnode_locate → Missing child` on event dispatch
+# Qwik `vnode_locate → Missing child` on event dispatch (beta.35 + beta.36)
+
+> **Status:** still reproduces on `2.0.0-beta.36` (re-verified). The beta.36
+> qwikloader streaming fix (#8689) does **not** address this — that fix defers
+> events during streaming, whereas this crash is at vnode-location time and
+> fires for the framework's own body-level bootstrap script regardless of
+> timing. In `beta.36` the `Missing child` `assertDefined` is `isDev`-gated, so
+> a **production** build no longer throws the loud assert — but
+> `vnode_getVNodeForChildNode` still returns nothing, the event handler's
+> invocation context can't resolve, and the page is still broken (just
+> silently).
 
 ## TL;DR
 
@@ -28,8 +38,8 @@ and leaving the page non-interactive.
 
 ## Versions
 
-- `@qwik.dev/core` 2.0.0-beta.35
-- `@qwik.dev/router` 2.0.0-beta.35
+- `@qwik.dev/core` 2.0.0-beta.36 (originally filed against beta.35; re-confirmed on beta.36)
+- `@qwik.dev/router` 2.0.0-beta.36
 - Vite 7.3.1, Node 22
 
 ## Steps to reproduce

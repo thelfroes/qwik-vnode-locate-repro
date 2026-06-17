@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@qwik.dev/core':
-        specifier: 2.0.0-beta.35
-        version: 2.0.0-beta.35(vite@7.3.1(yaml@2.9.0))
+        specifier: 2.0.0-beta.36
+        version: 2.0.0-beta.36(vite@7.3.1(yaml@2.9.0))
       '@qwik.dev/router':
-        specifier: 2.0.0-beta.35
-        version: 2.0.0-beta.35(@qwik.dev/core@2.0.0-beta.35(vite@7.3.1(yaml@2.9.0)))(rollup@4.60.4)(typescript@5.9.3)(vite@7.3.1(yaml@2.9.0))
+        specifier: 2.0.0-beta.36
+        version: 2.0.0-beta.36(@qwik.dev/core@2.0.0-beta.36(vite@7.3.1(yaml@2.9.0)))(rollup@4.60.4)(typescript@5.9.3)(vite@7.3.1(yaml@2.9.0))
     devDependencies:
       typescript:
         specifier: 5.9.3
@@ -340,8 +340,8 @@ packages:
     resolution: {integrity: sha512-mQeuJR1MJFnqZqJQ74B3WyP6oe2wC41VL/VAWzDj1lgdYDdlwLjFiXyHSziYH9L2cdkjGhiZ+7wdH/uUDuYryg==}
     engines: {node: ^18.14.0 || >=20}
 
-  '@qwik.dev/core@2.0.0-beta.35':
-    resolution: {integrity: sha512-2D7r0IuJJH5OwLOZp06THxwte5K6U48VZW08qHlFNi8IIOdVoKaKnEiKlZb/Gaspg5qbMQCLTpgBuOmGsPchJw==}
+  '@qwik.dev/core@2.0.0-beta.36':
+    resolution: {integrity: sha512-j7+HhecfMSrn97vjELu58PuA9yu+cx0Q/0VIYmfC39mPDP2lnvRvdMTodTa0HEMRuk+SRYP/XKDOXJO0u6VUYA==}
     engines: {node: ^20.3.0 || >=21.0.0}
     hasBin: true
     peerDependencies:
@@ -354,15 +354,15 @@ packages:
       vitest:
         optional: true
 
-  '@qwik.dev/optimizer@2.1.0-beta.4':
-    resolution: {integrity: sha512-NFos/eoxIJ8kE2euevbfetDmZJc3M1ZjGXZxNMWLumlu8sTpNPg+LOpMh226EoWcTS6233ftoJP0jHekFmqBgQ==}
+  '@qwik.dev/optimizer@2.1.0-beta.5':
+    resolution: {integrity: sha512-ygrROBg8/lqyvfig78lAEtxHLmLJLNcncMWLguIK4vmruuYpYXQVMMHklsbcTDj9tEvhL1B/MfclDsiG5E4XOA==}
     engines: {node: ^20.3.0 || >=21.0.0}
 
-  '@qwik.dev/router@2.0.0-beta.35':
-    resolution: {integrity: sha512-fsj1l77Wr+DQ0uT1/NU29x5vWABFotYjxh3w9XcySypdOslGgISrZ7pIzeTXIJ0mNumQwQja4ucmszmZo53r7A==}
+  '@qwik.dev/router@2.0.0-beta.36':
+    resolution: {integrity: sha512-Y+n2gmAb2CXIE8IbIyEtv5l6Q9t316YcBsSJ9i53b0kj/hRs45fdUAiQILdJLmK0cpIn0Oqc3yxZKyZScVEwsw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     peerDependencies:
-      '@qwik.dev/core': ^2.0.0-beta.35
+      '@qwik.dev/core': ^2.0.0-beta.36
       vite: '>=6 <9'
 
   '@rollup/pluginutils@5.3.0':
@@ -1447,23 +1447,23 @@ snapshots:
 
   '@netlify/types@2.7.0': {}
 
-  '@qwik.dev/core@2.0.0-beta.35(vite@7.3.1(yaml@2.9.0))':
+  '@qwik.dev/core@2.0.0-beta.36(vite@7.3.1(yaml@2.9.0))':
     dependencies:
-      '@qwik.dev/optimizer': 2.1.0-beta.4
+      '@qwik.dev/optimizer': 2.1.0-beta.5
       csstype: 3.2.3
       launch-editor: 2.13.2
       magic-string: 0.30.21
       rollup: 4.60.4
       vite: 7.3.1(yaml@2.9.0)
 
-  '@qwik.dev/optimizer@2.1.0-beta.4': {}
+  '@qwik.dev/optimizer@2.1.0-beta.5': {}
 
-  '@qwik.dev/router@2.0.0-beta.35(@qwik.dev/core@2.0.0-beta.35(vite@7.3.1(yaml@2.9.0)))(rollup@4.60.4)(typescript@5.9.3)(vite@7.3.1(yaml@2.9.0))':
+  '@qwik.dev/router@2.0.0-beta.36(@qwik.dev/core@2.0.0-beta.36(vite@7.3.1(yaml@2.9.0)))(rollup@4.60.4)(typescript@5.9.3)(vite@7.3.1(yaml@2.9.0))':
     dependencies:
       '@azure/functions': 3.5.1
       '@mdx-js/mdx': 3.1.1
       '@netlify/edge-functions': 3.0.7
-      '@qwik.dev/core': 2.0.0-beta.35(vite@7.3.1(yaml@2.9.0))
+      '@qwik.dev/core': 2.0.0-beta.36(vite@7.3.1(yaml@2.9.0))
       '@types/mdx': 2.0.13
       estree-util-value-to-estree: 3.5.0
       github-slugger: 2.0.0
